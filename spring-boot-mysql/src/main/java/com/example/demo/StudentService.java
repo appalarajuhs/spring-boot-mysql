@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +13,13 @@ public class StudentService {
 
 	public void saveStudent(Student student) {
 		studentRepository.save(student);
+		
+	}
+	
+	public Optional<Student> getStudent(Integer id)
+	{
+		return  studentRepository.findById(id);
+		
 		
 	}
 

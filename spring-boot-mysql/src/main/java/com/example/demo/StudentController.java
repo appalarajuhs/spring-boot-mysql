@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class StudentController {
-	
+	//sample project created sucessfully.
 	@Autowired
 	private StudentService studentStudent;
 	
